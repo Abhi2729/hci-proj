@@ -1,0 +1,366 @@
+#bg {
+    /*background: url("images/bg4.jpg");*/
+    background-color:aquamarine;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+#bg2{
+    background: url("images/bg3.jpg" ) ;
+    background-size: cover;
+}
+#bg3{
+    background: url("images/bg5.jpg" ) ;
+    background-size: cover;
+}
+#bg4{
+    background: url("images/bg4.jpg" ) ;
+    background-size: cover;
+}
+#bg5{
+    background: url("images/b55.jpg" ) ;
+    background-size: cover;
+}
+#bg6{
+    background: url("images/bg6.jpg" ) ;
+    background-size: cover;
+}
+#bg7{
+    background: url("images/blur-chart-check-up-415779.jpg" ) ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#bg8{
+    background: url("images/2.jpg" ) ;
+    background-size: cover;
+}
+#bg9{
+    background: url("images/appo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#bg10{
+    background: url("images/black-wallpaper-dark-galaxy-14676.jpg" ) ;
+    background-size: cover;
+}
+#bg11{
+    background: url("images/368844.jpg");
+    background-size: cover;
+}
+#form{
+    border: 2px solid white;
+  border-radius: 12px;
+    float: right;
+    opacity: 2.0;
+    margin-right: 100px;
+}
+.navbar-brand {
+    color:green;
+}
+.summa li a{
+    color:white;
+    padding: 10px;
+}
+.summa{
+    padding-bottom: 80px;
+}
+.summa a:hover{
+    transition: 0.75s;
+    border-radius: 20px;
+}
+#form:hover{
+    -webkit-box-shadow: 4px 7px 20px -1px rgba(66,157,199,1);
+-moz-box-shadow: 4px 7px 20px -1px rgba(66,157,199,1);
+box-shadow: 4px 7px 20px -1px rgba(66,157,199,1);
+}
+.formpad{
+    padding-top: 15%;
+    color:white;
+}
+#first{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color:white;
+    text-align: center;
+}
+#second{
+    padding-top:55px;
+    color:red; 
+}
+.jumbotron{
+    background:transparent !important;
+	padding-top:10px;
+}
+.jump{
+    
+    font-size:24px;
+    color:white;
+    line-height:40px;
+}
+
+#third{
+    padding-bottom: 35px;
+    color: white;
+}
+#four{
+    padding-left: 410px;
+}
+#five{
+    padding-left: 50%;
+    color: white;
+    display: block;
+    font-family: Montserrat-ExtraBold;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: px;
+    float: left;
+    margin-left: 20px;
+}
+#five h1{
+    font-size: 50px;
+}
+#five h2{
+    font-size: 30px;
+}
+.top_head{
+	background:rgba(0, 0, 0, 0);
+}
+.inner_top{
+	background:rgba(128,128,128,0.8);
+	border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-right: 5px;   
+}	
+.ul_one{
+    float: left;
+    padding-right: 10px;
+}
+.ul_two{
+    float: right;
+    margin-right: 20px;
+
+}
+.ul_one li,.ul_two li{
+	display:inline-block;
+    margin:  0.7em 1.2em;
+}
+.ul_one  a,.ul_two a{
+	font-size: 1em;
+	text-decoration:none;
+    color:white;
+    vertical-align:middle;
+	
+}
+.ul_one a:hover,.ul_two  a:hover{
+	font-size:16px;
+    transition:0.65s;
+}
+.logo :hover{
+    transition: 0.75s;
+    border-radius: 50px;
+}
+.logo{
+    float: left;
+    padding:10px 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    
+}
+.logo span{
+    color: red;
+}
+.catbox{
+
+    position: relative;
+}
+.catbox span{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: block;
+    z-index: 999;
+    text-align: center;
+}
+#row_cat img{
+    width: 100%;
+    height: 150px;
+}
+#doc_app{
+
+    background: url("images/doc.jpg");
+    background-size: cover;
+    height: 200px;
+    color: #ffffff;
+        border: 2px;
+  border-radius: 15px;
+}
+#inner_doc{
+    padding-top:20px;
+    padding-left:20px;
+     border: 2px;
+  border-radius: 15px;
+}
+.hr{
+
+    background-color: green;
+    height: 10px;
+}
+#emg{
+    height: 200px;
+    background: white;
+    background-size: cover;
+    text-align: center;
+    color:black;
+     border: 2px;
+  border-radius: 15px;
+}
+.trans{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 150px;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.catbox:hover .trans{
+    opacity: 0.5;
+    transition: all .5s ease;
+}
+.trans-1{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 180px;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+#prod_box{
+    position: relative;
+}
+#prod_box:hover .trans-1{
+    opacity: 0.8;
+    transition: all 1s ease;
+}
+.prod_feature{
+    text-align: center;
+    margin-top: -300px;
+    transition: all 1s ease;
+}
+.prod_feature p{
+    color:white;
+    font-weight: 100px;
+    font-size: 20px;
+
+}
+#prod_box:hover .prod_feature{
+    margin-top: 40px;
+    transition: all 1.5s ease;
+}
+.prod_feature span{
+}
+.footer{
+    background:rgba(255, 255, 255, 0)
+}
+#home_foot{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding-bottom: 10px;
+   
+}
+#about{
+		padding-bottom:90px;
+}
+#book{
+    padding-bottom: 165px;
+}
+#contact_foot{
+    padding-left: 100px;
+    padding-bottom:10px;
+    text-align: center;
+}
+#prod_foot{
+    padding-top:20px;
+    color: white;
+}
+#prod_foot a{
+    color: white;
+}
+.footer-copyright{
+    padding-top:10px;
+}
+#cat-table td{
+	border:none;
+}
+#ab_prod{
+    background-color: rgb(0,0,0,0.6);
+    text-align: center;
+   border: 2px;
+  border-radius: 12px;
+    color: white;
+}
+#abprod img:hover{
+  height: 320px;
+  transition: 0.5s;
+}
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    text-align: center;
+    border: 2px;
+    border-radius: 12px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: red;border:2px;border-radius:12px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}

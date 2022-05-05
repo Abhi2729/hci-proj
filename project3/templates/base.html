@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PharmaHelp</title>
+    <script src="{{ url_for('static', filename = 'js/jquery.js') }}"></script>
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'back.css') }}">
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_for('static', filename = 'font-awesome-4.7.0/css/font-awesome.min.css') }} " rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body id="bg">
+    <div class="container" >
+        <div class="top_head">
+            <div class="container">
+                <div class="inner_top">
+                    <ul class="ul_one" style="font-size: 15px">
+                        <li>
+                            <a href="harirooban@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true" ></i>PharmaHelp@gmail.com</a>
+                        </li>
+                        <li>
+                            <span style="color:white">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>+919096645223</span>
+                        </li>
+                    </ul>
+                    <ul class="ul_two">
+                        <li>
+                            <a href="/cart" class="btn btn-primary" style="border: 2px solid white;
+  border-radius: 12px;
+    color: white;background-color: transparent">CART {{ noOfItems }}</a>
+
+                        </li>
+                        <li>
+                            {% if not loggedIn %}
+                            <a href="/loginForm" style="font-size: 20px">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                            {% else %}
+                            <div class="dropdown">
+                                <button class="dropbtn">Hi,{{ firstName }}</button>
+                                <div class="dropdown-content" area-labelledby="drop">
+                                    <a href="/cart" >Your Orders</a>
+                                   
+                                    
+                                    <a href="/logout">Sign Out </a>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_head">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Pharma<span>H</span>elp</a>
+                </div>
+                <div class="summa">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">
+                                <h4 style="color: black">Home</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/prod">
+                                <h4 style="color: black">Product</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about ">
+                                <h4 style="color: black">About Us</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact">
+                                <h4 style="color: black">Contact </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

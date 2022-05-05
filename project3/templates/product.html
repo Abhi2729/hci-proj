@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div class="container">
+              <hr class="hr-danger">
+             <center><h1 style="color: white">Welcome to PharmaHelp Store</h1></center>
+           <hr class="hr-danger">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="/static/images/member.png" width="100%" style="border: 2px;border-radius: 15px"></br></br>
+                    <img src="/static/images/deal.jpg" width="100%"style="border: 2px;border-radius: 15px" >
+                </div>
+                <div class="col-sm-8">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" ></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="/static/images/slider/natural.png" width="100%" alt="First slide" style="border: 2px;border-radius: 15px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 style="color:white">We Are providing natural Products</h3>
+                                <a href="/displayCategory?categoryId=3" type="button" class="btn btn-danger">Read More</a>
+                              </div>
+                          </div>
+                          <div class="item">
+                            <img src="/static/images/slider/tablets.jpg" width="100%" alt="Second slide" style="border: 2px;border-radius: 15px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 style="color:white">We Are providing Tablets</h3>
+                                <a type="button" href="/displayCategory?categoryId=1" class="btn btn-danger">Read More</a>
+                            </div>  
+                          </div>
+                          <div class="item">
+                            <img  src="/static/images/slider/liquid.png" width="100%" alt="Third slide" style="border: 2px;border-radius: 15px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 style="color:white">We Are providing Liquid Item Too</h3>
+                                <a href="/displayCategory?categoryId=4" type="button" class="btn btn-danger">Read More</a>
+                                </div>
+                           </div>
+                        </div>
+                        <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row"  id="row_cat">
+                  <hr class="hr-danger">
+                <h2 style="text-align:center;color: white">Products</h2>
+                <hr class="hr-danger">
+                <h3 style="color: white;text-align: center">Shop by Category</h3>
+                <hr class="hr-danger">
+                <div class="col-sm-3">
+                        <div class="catbox">
+                    <a href="/displayCategory?categoryId=1">
+                    <img src="/static/images/antibiatics/anti.png" width=100%style="border: 2px;border-radius: 15px">
+                    <span style="border: 2px;border-radius: 15px">ANTIBIOTICS</span></a>
+                    <div class="trans"></div>
+                </div>    
+                </div>
+                <div class="col-sm-3">
+                        <div class="catbox">
+                        <a href="/displayCategory?categoryId=2">
+                    <img src="/static/images/fever/fever.png" width=100% style="border: 2px;border-radius: 15px">
+                    <span style="border: 2px;border-radius: 15px">FEVER</span></a>
+                    <div class="trans"></div>
+                </div>
+                </div>
+                <div class="col-sm-3">
+                        <div class="catbox"><a href="/displayCategory?categoryId=3">
+                    <img src="/static/images/natural/nat.jpg" width=100% style="border: 2px;border-radius: 15px">
+                    <span style="border: 2px;border-radius: 15px">NATURAL MEDICINE</span></a>
+                    <div class="trans"></div>
+                </div>
+                </div>
+                <div class="col-sm-3">
+                        <div class="catbox">
+                        <a href="/displayCategory?categoryId=4">
+                    <img src="/static/images/painkiller/painkiller.png" width=100% style="border: 2px;border-radius: 15px">
+                    <span style="border: 2px;border-radius: 15px">PAIN KILLER</span></a>
+                    <div class="trans"></div>
+                </div>
+                </div>
+            </div></br></br>
+            <div class="row">
+                <div class="container">
+                      <hr class="hr-danger">
+                    <h1 style="text-align: center;color: white">All products</h1>
+                    <hr class="hr-danger">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators"></br>
+                              <li data-target="#myCarousel" data-slide-to="0" ></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="container">
+                                    <div class="row">
+                                            <div class="col-sm-4" id="prod_box">
+                                                    <img src="static/images/antibiatics/amoxicillin.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                                    <div class="trans-1">
+                                                         <div class="prod_feature">
+                                                         <p>Amoxicillin</p>
+                                                        </div>
+                                                    </div>      
+                                                
+                                                </div>   
+                                                <div class="col-sm-4" id="prod_box">
+                                                        <img src="static/images/antibiatics/ciprofloxacin.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                                        <div class="trans-1">
+                                                            <div class="prod_feature">
+                                                                <p>Ciprofloxacin</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4" id="prod_box">
+                                                        <img src="static/images/antibiatics/penicillin.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                                        <div class="trans-1">
+                                                            <div class="prod_feature">
+                                                                <p>Penicillin</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>                         
+                                        
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                    <div class="col-sm-4" id="prod_box">
+                                            <img src="/static/images/fever/advil.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                            <div class="trans-1">
+                                                <div class="prod_feature">
+                                                    <p>Advil</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4" id="prod_box">
+                                            <img src="/static/images/fever/capoten.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                            <div class="trans-1">
+                                                <div class="prod_feature">
+                                                    <p>Capoten</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4" id="prod_box">
+                                            <img src="/static/images/fever/mortrin.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                            <div class="trans-1" >
+                                                <div class="prod_feature">
+                                                    <p>Motrin</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                              </div>
+                              <div class="item">
+                                    <div class="col-sm-4" id="prod_box">
+                                        <img src="/static/images/natural/aloe vera.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                        <div class="trans-1">
+                                            <div class="prod_feature">
+                                                <p>Aloe Vera</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" id="prod_box">
+                                        <img src="/static/images/natural/ginseng.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                        <div class="trans-1">
+                                            <div class="prod_feature">
+                                                <p>Ginseng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" id="prod_box">
+                                        <img src="/static/images/natural/milk thistle.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                        <div class="trans-1">
+                                            <div class="prod_feature">
+                                                <p>Milk Thistle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                               <div class="item">
+                                    <div class="col-sm-4" id="prod_box">
+                                            <img src="/static/images/painkiller/aspirine.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                            <div class="trans-1">
+                                                <div class="prod_feature">
+                                                    <p>Aspirine</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4" id="prod_box">
+                                            <img src="/static/images/painkiller/morphine.jpg" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                            <div class="trans-1">
+                                                <div class="prod_feature">
+                                                    <p>Morphine</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4" id="prod_box">
+                                            <img src="/static/images/painkiller/paracetamol.png" width="100%" height="180px" style="border: 2px;border-radius: 15px">
+                                            <div class="trans-1">
+                                                <div class="prod_feature">
+                                                    <p>Paracetomol</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                               </div>
+                            </div>
+                            <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+            </div></br>
+            <div class="row" >
+                <div class="col-sm-4" id="doc_app">
+                    <div id="inner_doc">
+                    <h3>For Appoinment</h3>
+                    <a type="button" href="/appo" class="btn btn-success" style="border: 2px;border-radius: 12px">Click Here</a>
+                </div>
+                </div>
+                <div class="col-sm-4" id="emg">
+                    <span><h4>Emergency Contact Number</h4>
+                    <h3>7010349412</h3>
+                    <button type="buttton" class="btn btn-primary" style="border: 2px;border-radius: 12px;font-size: 20px"> <i class="fa fa-phone-square" aria-hidden="true"></i>Call</button>
+                </span>    
+                </div>
+                <div class="col-sm-4">
+                    <img src="/static/images/offer.jpg" width="100%" height="200px"  style="border: 2px;
+  border-radius: 15px;">
+                </div>
+              
+            </div>
+            <div class="row">
+                  <hr class="hr-danger">
+                    <h2 style="text-align: center;color: white">Our Services</h2>
+                <hr class="hr-danger">
+                    <div class="col-sm-8">
+                        <img src="/static/images/rent.jpg" width="100%" height="250px" style="border: 2px;border-radius: 15px">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="/static/images/free.png" width="100%" style="border: 2px;border-radius: 15px"></br></br>
+                        <img src="/static/images/cod.jpg" width="100%" style="border: 2px;border-radius: 15px">
+                    </div>
+                </div></br>
+        </div>
+{% endblock %}        
+  

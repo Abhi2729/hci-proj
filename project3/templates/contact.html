@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <script src="{{ url_for('static', filename = 'js/jquery.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'back.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_for('static', filename = 'font-awesome-4.7.0/css/font-awesome.min.css') }} " rel="stylesheet">
+</head>
+
+<body id="bg5">
+    <div class="container">
+        <div class="top_head">
+            <div class="container">
+                <div class="inner_top">
+                    <ul class="ul_one" style="font-size: 15px">
+                        <li>
+                            <a href="harirooban@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true" ></i>PharmaHelp@gmail.com</a>
+                        </li>
+                        <li>
+                            <span style="color:white">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>+919096645223</span>
+                        </li>
+                    </ul>
+                    <ul class="ul_two">
+                        <li>
+                            <a href="/cart" class="btn btn-primary" style="border: 2px solid white;
+  border-radius: 12px;
+    color: white;background-color: transparent">CART {{ noOfItems }}</a>
+
+                        </li>
+                        <li>
+                            {% if not loggedIn %}
+                            <a href="/loginForm" style="font-size: 20px">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                            {% else %}
+                            <div class="dropdown">
+                                <button class="dropbtn">Hi,{{ firstName }}</button>
+                                <div class="dropdown-content" area-labelledby="drop">
+                                    <a href="/cart" >Your Orders</a>
+                                   
+                                    
+                                    <a href="/logout">Sign Out </a>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_head">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Pharma<span>H</span>elp</a>
+                </div>
+                <div class="summa">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">
+                                <h4>Home</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/prod">
+                                <h4>Product</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about">
+                                <h4>About Us</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact">
+                                <h4>Contact </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div class="form">
+    <div class="container" >
+        <div class="row " id="five">
+            <h1 style="font-family: sans-serif;padding-left: 100px">Contact Us</h1>
+        </div>
+        <div class="row" id="contact_foot" >
+            <div class="col-sm-6"></div>
+            <div class="col-sm-5">
+                <form>
+                    <div class="form-group" style="    border: 2px solid white;border-radius: 12px;color: white;background-color: transparent;">
+                        <input type="text" class="form-control" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group" style="    border: 2px solid white;border-radius: 12px;color: white;background-color: transparent;">
+                        <input type="tel" class="form-control" name="name" placeholder="Phone Numeber" required>
+                    </div>
+                    <div class="form-group" style="     border: 2px solid white;border-radius: 12px;color: white;background: transparent;">
+                        <input type="email" class="form-control" name="name" placeholder="E-Mail" required>
+                    </div>
+                    <div class="form-group" style="    border: 2px solid white;border-radius: 12px;color: white;background-color: transparent;">
+                        <textarea class="form-control" rows="4"  name="name" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success" style="    border: 2px solid white;
+  border-radius: 12px;
+    color: white;
+    background-color: green;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 jumbotron">
+                    <h2 class="jump" style="color: black; border: 2px solid black; border-radius: 12px">We Are Providing Medicines To Your Doorstep And Now You Can Book Doctor's Appointment Here !</h2>
+                </div>
+                <div class="col-sm-6 jumbotron" style="float:right">
+                    <h2 class="jump" style="color: black; border: 2px solid black; border-radius: 12px">We are presently delivering to over 1000 pin codes and this number will increase in the days to come.</h2>
+                </div>
+            </div>
+            <div class="row" id="book">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <a class="btn btn-primary" href="/prod" style="float:left; border: 2px solid black; border-radius: 12px;
+                        color: black;background-color: transparent;font-size: 20px">Buy Medicines</a>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-success" href="/appo" style="float:right; border: 2px solid black; border-radius: 12px;
+                        color: black;background-color: transparent;font-size: 20px" >Book Appointment</a>                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
