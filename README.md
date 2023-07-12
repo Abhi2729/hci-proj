@@ -16,6 +16,6 @@ Database  : SQLite3.
 doctor based on their timing and doctor’s availability .They can also
 purchase medicines based on doctor’s prescription.
 
-  I have attached the screenshot of this project,it will explain the working process of project.
+  
   
   Thank You.
